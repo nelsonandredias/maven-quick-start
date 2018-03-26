@@ -8,6 +8,16 @@
   <artifactId>maven-quick-start</artifactId>
   <version>1.0</version>
   
+  <!-- dependencies must be inserted before the build group -->
+   <dependencies>
+	<!-- lib used in Application.java and dependecy retrieved from https://search.maven.org -->
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-lang3</artifactId>
+		<version>3.7</version>
+	</dependency>
+  </dependencies>
+  
   <!--  build represents the lifecycle -->
   <build>
   	<plugins>
@@ -22,5 +32,7 @@
   		</plugin>
   	</plugins>
   </build>
+  
+ 
   
 </project>
