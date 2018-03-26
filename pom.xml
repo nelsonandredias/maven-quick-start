@@ -6,16 +6,24 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>clinic.programmming</groupId>
   <artifactId>maven-quick-start</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   
   <!-- dependencies must be inserted before the build group -->
    <dependencies>
-	<!-- lib used in Application.java and dependecy retrieved from https://search.maven.org -->
+	<!-- lib used in Application.java and dependency retrieved from https://search.maven.org -->
 	<dependency>
 		<groupId>org.apache.commons</groupId>
 		<artifactId>commons-lang3</artifactId>
 		<version>3.7</version>
 	</dependency>
+	<!-- lib used in ApplicationTest.java and dependency retrieved from https://search.maven.org -->
+	<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.12</version>
+    <scope>test</scope> <!-- we want to make sure that it is under the scope of test. It means, we only need
+    the junit dependency just for testing purpose -->
+</dependency>
   </dependencies>
   
   <!--  build represents the lifecycle -->
